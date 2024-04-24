@@ -1,15 +1,17 @@
 //import PropTypes from "prop-types";
-//import FriendListItem from "./FriendListItem";
+import FriendListItem from "./FriendListItem";
 //import friends from "../friends.json";
 
-const FriendList = ({ friends }) => {
+function FriendList({ friends }) {
   return (
     <ul>
-      {friends.map((friend) => {
-        return <li key={friend.id}>{friend}</li>;
-      })}
+      {friends.map((friend) => (
+        <li key={friend.id}>
+          <FriendListItem friend={friend} />
+        </li>
+      ))}
     </ul>
   );
-};
+}
 
 export default FriendList;
