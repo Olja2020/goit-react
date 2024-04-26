@@ -18,6 +18,7 @@
   justify-content: space-between;
   font-size: 30px;
   margin-top: 40px;
+  gap:10px;
 }
 .active {
   display: inline-block;
